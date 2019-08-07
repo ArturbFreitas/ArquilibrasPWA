@@ -22,7 +22,7 @@
 			$('#header').load("navbar.html");
 		});
 		function video_player(){
-			alert('abrir modal com vídeo');
+			$('#modalPlayer').modal('show');
 
 		}
 		// 2. This code loads the IFrame Player API code asynchronously.
@@ -125,4 +125,27 @@
 
 
 </body>
+
+<!--start modal-->
+<div id="modalPlayer" class="modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Arranha-céu</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       	<div id="player"></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<!--end modal-->
 </html>
+
